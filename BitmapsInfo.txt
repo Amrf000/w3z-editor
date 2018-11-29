@@ -1,0 +1,78 @@
+ Coordinates
+-------------
+
+Display:
+--------
+(x, y)
+
+(0, 0)
+     +----+
+     |    |
+     |    |
+     +----+
+          (pView->m_pBitmapInfo->biWidth-1, pView->m_pBitmapInfo->biHeight-1)
+
+
+Bitmaps:
+--------
+(bx, by)
+bx = x
+by = (pView->m_pBitmapInfo->biHeight-1) - y
+
+          (pView->m_pBitmapInfo->biWidth-1, pView->m_pBitmapInfo->biHeight-1)
+     +----+
+     |    |
+     |    |
+     +----+
+(0, 0)
+
+
+
+Tilepoints:
+-----------
+(tx, ty)
+tx =
+ty =
+
+          (pDoc->m_War3Map.GetMapWidth(), pDoc->m_War3Map.GetMapHeight())
+     +----+
+     |    |
+     |    |
+     +----+
+(0, 0)
+
+note: pDoc->m_War3Map.GetMapWidth() = "nombre de tilepoints sur une ligne" - 1
+(idem pour la verticale)
+
+
+Doodads coordinates:
+--------------------
+(dx, dy)
+
+
+Path map TGA:
+-------------
+(px, py)
+px =
+py =
+
+(0, 0)
+     +----+
+     |    |
+     |    |
+     +----+
+          (pDoc->m_War3Map.GetMapWidth()*4 -1, pDoc->m_War3Map.GetMapHeight()*4 -1)
+
+
+Shadow map & path map:
+----------------------
+(sx, sy)
+sx =
+sy =
+
+          (pDoc->m_War3Map.mapShadowMap.GetShadowMapWidth() -1, pDoc->m_War3Map.mapShadowMap.GetShadowMapHeight() -1)
+     +----+
+     |    |
+     |    |
+     +----+
+(0, 0)

@@ -1,0 +1,31 @@
+ Zépir's War3 Map Editor 1.0 - To Do / Wish List
+----------------------------- -------------------
+-remove the WINVER warnings
+-improve 3D view
+-update statistics window and add fields
+-more tools (tilepoints, doodads, shadows, ...)
+-cleaner code (especially undo/redo code, lists,...)
+-display and edit minimap data
+-auto-import files from the auto-import directory
+-handle compression level by file filters
+-some tooltips (pathing)
+-map resizing
+-clean the way map data is initialized to make sure the map can be opened in
+ the World Editor
+-add an editor option menu
+-save/open editor option (ini file)
+-import/export War3MapPath.TGA file
+-TGA/GIF/BMP import to generate a new ground map (for example, red =ground level, blue=water or ground type, green=trees,...)
+-custom tileset import (replacing original tilesets)
+-Preview screen minimap import
+-minimap auto-generation
+-better handle errors in files format (tell what's wrong, guess what to do
+ with new files format)
+-handle all W3I fields
+-remember path for files
+-maps protection
+-auto-save
+-dialog to customize display (user interface to edit .ini file data)
+-find a way to handle any custom unknown file put in a W3M/W3X
+-copy/paste
+-...

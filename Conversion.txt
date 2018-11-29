@@ -1,0 +1,197 @@
+-------------------------------------------------------------------------------
+# SCM->W3M
+###########
+
+Sections definition:
+	War3StrID	header;
+	int		length; // in bytes
+	byte		data[length];
+
+x: Section 'TYPE'
+ not needed, should be "RAWS" (SC) or "RAWB" (Brood)
+
+x: Section 'VER ' - identifies the file format version
+ beta57 * 1.00 * 1.04 * Brood REQUIRED 
+1 word - File format version. 57 for beta57 version, 59 for 1.00 format, 63 for 1.04 format, 205 for Brood format
+
+
+x: Section 'ERA ' - specifies tileset of the map 
+ beta57 * 1.00 * 1.04 * Brood REQUIRED 
+1 word - Designates tileset
+
+00 - Badlands
+01 - Space Platform
+02 - Installation
+03 - Ashworld
+04 - Jungle World
+05 - Desert World
+06 - Arctic World
+07 - Twilight World
+
+
+x: Section 'DIM ' - specifies map dimensions 
+ beta57 * 1.00 * 1.04 * Brood REQUIRED 
+1 word - Width of the map. SHOULD be one of the following values: 64, 96, 128, 192, 256
+1 word - Height of the map. SHOULD also be one of those values
+
+Note: I've heard that you can use values other than the ones I've listed.
+ However, I haven't ever tried, so I don't know how it will work. Be warned!
+
+ 
+x: Section 'MTXM', graphical tile map section 
+ beta57 * 1.00 * 1.04 * Brood 
+Note: This section is not actually a map of the level's terrain, as it would
+ appear at first. It is actually a map of the level's appearance. The tiles in
+ this section are the tiles that actually get displayed in Starcraft(StarEdit,
+ however, disregards this section, and regenerates it upon saving) This section
+ will only be different from the TILE section on tiles where doodads are present. 
+
+height * width words - 1 word for each tile. see appendix E: Map Tiles
+ 
+Appendix E: Map Tiles  
+ Each map tile consists of 1 word. That int's bits are composed as follows: 
+
+FFEE EEED DDDC BAAA
+
+AAA section - The info in this section will always be the same. It is the
+ variant of the map tile. However, not all tiles for all tilesets have all
+ variants. If an invalid variant is used, it will appear as a Black Plaque
+ Tile (solid black square) in the game, and in the editor.
+
+B section - This bit indicates (when applicable) that the tile has a decoration
+ on it
+
+C section - Odd or even block # (this is nessesary because of Starcraft's
+ isometric tile system)
+
+D section - For solid tiles, this is the tile identity. For border tiles, this
+ is the border's configuration. I'm still working on this section
+
+E section - For solid tiles, this is unused, and MUST be set to 0s. For border
+ tiles, this is the border identity. I'm still working on this section
+
+F section - These 2 bits are unused, and MUST be set to 0s or StarEdit will crash
+
+This section is NOT finished yet!
+
+Sub-Appexdix E-A: Solid Tile Values 
+  Badlands		Space		Installation	Ashworld	Jungle		Desert		Arctic		Twilight
+1 Dirt			Space		Substructure	Dirt		Dirt		Dirt		Snow		Dirt
+2 HDirt			Platform	SubPlating		Lava		HDirt		HDirt		HSnow		HDirt
+3 Water			Plating		Floor			HDirt		Water		Tar			Ice			Water
+4 Grass			HPlatform	Roof			HLava		Jungle		Sand Dunes	Dirt		Crushed Rock
+5 HGrass		HPlating	Plating			Shale		Rocky Grnd	Rocky Grnd	Rocky Snow	Crevices
+6 Rocky Grnd	Solar Array	Bottomless Pit	High Shale	RaisedJngle	Sunken Pit	Water		Sunken Ground
+7 Dirt??		Low Platfrm	Subst. Panels	Magma		Ruins		Crags		Grass		Flagstones
+8 Asphalt		Dark Pltfrm	-				Broken Rock	Temple		Compound	Outpost		Basilica
+9 Structure		Rusty Pit	-				-			HJungle		HSand Dunes	HDirt		HCrushed Rocks
+A Mud			Elv Catwalk	-				-			HRuins		HCrags		HGrass		HFlagstones
+B -				-			-				-			HRaiJngle	HSunken Pit	HWater		HSunken Ground
+C -				-			-				-			HTemple		HCompound	HOutpost	HBasilica
+D -				-			-				-			Mud Dried	Mud			Moguls		Mud
+E -				-			-				-			-			-			-			-
+F -				-			-				-			-			-			-			-
+
+x: Section 'TILE' - tile map of level's terrain 
+ beta57 * 1.00 * 1.04 * Brood REQUIRED
+Note: This section will only be different from the MTXM section on tiles where doodads are present. 
+width * height ints - 1 int for each map tile. see appendix E: Map Tiles 
+ 
+
+x: Section 'ISOM' - isometric tile mapping 
+ beta57 * 1.00 * 1.04 * Brood REQUIRED
+Note: This section is used to map the square tiles of the 'TILE' section to the isometric
+ (diamond) shape on the terrain in the map editor. This section affects what type of
+ terrain can be placed where, and how, on the map. This does not appear to have any
+ function in Starcraft itself, only Staredit. But I haven't yet figured out the format
+ of it.
+(width / 2 + 1) * (height + 1) * (4 * 2bytes)
+
+
+
+
+-------------------------------------------------------------------------------
+# PUD->W3M
+###########
+
+Sections definition:
+	War3StrID	header;
+	int		length; // in bytes
+	byte		data[length];
+
+
+0: Section 'TYPE', identifies as a PUD file
+
+	War3Str		null terminated type ('WAR2 MAP')
+	7 bytes		id tag
+
+1: Section 'VER ', identifies PUD version
+
+	word		version ($11)
+
+
+4: Section 'ERA ', terrain type
+
+	word		terrain
+
+	should be:
+
+	$00		forest
+	$01		winter
+	$02		wasteland
+	$03		swamp
+
+5: Section 'DIM ', map dimensions
+
+	word		x
+	word		y
+
+
+13: Section 'MTXM', tiles map
+
+	X*Y words	tile
+
+	See Appendix D for general info on map tiles.
+
+
+Appendix D: General map tiles
+
+	solid tiles
+
+	001x		light water
+	002x		dark water
+	003x		light coast
+	004x		dark coast
+	005x		light ground
+	006x		dark ground
+	007x		forest
+	008x		mountains
+	009x		human wall
+	00ax		orc walls
+	00bx		human walls
+	00cx		orc walls
+
+	boundry tiles
+
+	09..		orc wall
+	08..		human wall
+	07..		forest and grass
+	06..		dark grass and grass
+	05..		coast and grass
+	04..		mount and coast
+	03..		dark coast and coast
+	02..		water and coast
+	01..		dark water and water
+
+	where .. is:
+
+	filled	clear
+	0x	Dx	upper left
+	1x	Cx	upper right
+	2x	Bx	upper half
+	3x	Ax	lower left
+	4x	9x	left half
+	7x	6x	lower right
+	8x	5x	upper left, lower right
+
+-------------------------------------------------------------------------------

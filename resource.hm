@@ -1,0 +1,50 @@
+/*
+    This file is part of W3ZMapEditor (c).
+
+    W3ZMapEditor is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    W3ZMapEditor is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with W3ZMapEditor; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+// Microsoft Visual C++ generated Help ID include file.
+// Used by W3ZMapEdit.rc
+//
+#define HIDC_CHK_CLIFF_TYPE             0x8085046a    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_DETAILS                0x8085046b    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_ANGLE           0x80860472    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_LIFE            0x80860477    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_SCALE_X         0x80860474    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_SCALE_Y         0x80860475    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_SCALE_Z         0x80860476    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_TYPE            0x80860470    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOODAD_VARIATION       0x80860471    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOO_NON_SOLID          0x8086045a    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_DOO_NORMAL             0x8086045b    // IDD_BAR_DOODADS [Anglais (États-Unis)]
+#define HIDC_CHK_GROUND_TYPE            0x80850469    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_LAYER                  0x8085046c    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_TILEPOINT_HEIGHT       0x8085046d    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_TILE_BLIGHT            0x8085042c    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_TILE_MINIMAPSHD        0x8085042a    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_TILE_RAMP              0x8085042b    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_TILE_SHADOW            0x808503f3    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_TILE_WATER             0x808503f1    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CHK_WATER_LEVEL            0x8085046e    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CMB_TILE_CLIFF             0x8085040a    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_CMB_TILE_GROUND            0x80850408    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDITMODE                   0x808003ec    // IDD_BAR_EDITMODE [Anglais (États-Unis)]
+#define HIDC_EDTFLAGS                   0x80850411    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDT_GROUND_LEVEL           0x80850455    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDT_TILE_DETAILS           0x8085040b    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDT_TILE_HEIGHT            0x808503f0    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDT_TILE_LAYER             0x8085040c    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDT_TILE_WATER_LEVEL       0x808503f2    // IDD_BAR_TILE [Anglais (États-Unis)]
+#define HIDC_EDT_WATER_LEVEL            0x80850456    // IDD_BAR_TILE [Anglais (États-Unis)]

@@ -1,0 +1,129 @@
+ Zépir's War3 Map Editor 1.0 - Source Code Documentation
+----------------------------- ---------------------------
+
+This file contains many VERY IMPORTANT informations about W3ZME.
+If you plan to learn from this project, you'd better read it all or at least
+have a look to "About the use of all this".
+
+
+Source files:
+-------------
+The source files should be opened with Microsoft Visual C++ .NET.
+Go in the "Src" directory and open "W3ZMapEdit.sln".
+I put some interesting text files in the source directory that may help...
+
+
+About the project:
+------------------
+I'll talk here about what motivated this project.
+This project started in april' 2002 when Warcraft III was in beta version.
+The beta version, in the begining, did not contain many maps (only 4) and
+there was no map editor available. However, there was many stuff in the beta
+that Blizzard did not show and I wanted to design new maps using these
+features. I did some map with MS Excel! How? Well, each cell of Excel had
+some tile values to choose the ground type, height and such and I used cells
+background colors to see how the map would look like. Then, the hexadecimal
+data was put back into a map and... go go go! ;-) But that wasn't easy to use.
+So I started making my own editor with Visual C++. My knowledge in C++, Visual
+C++ and in projects design and managment were VERY LOW at that time. I realize
+now how many things I should have known before starting... but I thought it
+would be ok and I would learn with that project. A few weeks after I started
+the project, some guy called Yobguls found a way to launch the official
+World Editor from the code left in Warcraft III beta. People thought my
+editor would be useless by then... of course, my editor wouldn't do the things
+a company commercial editor made by many employees would do but at least, I
+could modify it to make it suites my needs and add features the official
+editor did not handle! And that was the point: do things the official World
+Editor can't do. So I continued.
+I was always alone working on that project and when I started, I had plenty of
+free time since I wasn't working nor studying. But then, I went back to
+studies and I didn't have that much time to spend on this project. So W3ZME
+developpment was getting really slow. I had to stop many times and come back
+on the source code months after! And I learned many new programing technics
+while coding for W3ZME but also at the university and in some other projects.
+That's why, from the begining to the end of the project, many many many things
+changed and the source files may seem really weird as some parts are there
+since the begining and some other are quite new.
+Anyway, today I think I reached most of the targets I had when I started and
+I'm quite satisfied with my job eventhough I'm sure many people aren't because
+we don't see that stuff from the same point of vue. The thing is I realize
+I can't handle this project anymore and I'm not sure it is even still usefull
+for people. Many people asked me the source code for various reasons (some are
+goods, some aren't), I decided to release the source code. I tried the last 5
+months (and more) to find the time to "clean" the source code but I was
+unsuccessful. So I've decided to release the source code "as is" even if I
+think it can be usefull for only 1 or 2, maybe 3 guys on Earth...
+Releasing the source code means I wont work on that project anymore.
+
+
+About the source files:
+-----------------------
+First of all, I'd like make sure everybody reading this will be aware I don't
+code the way the source code is here anymore. I have to make sure you really
+understand the following points which are REALLY important; by the time I
+started the project:
+-I didn't have any coding conventions (variable naming and such);
+-I didn't decide if I would comment in French or in English;
+-I didn't think about how much comments I should but and where/how;
+-I didn't know much about class virtual inheritance;
+-I didn't know much about how to manage MFC class inheritance;
+-I knew really few about MFC;
+-I only coded 3 applications using Visual C++ wich where: 1) a kind of "paint brush" at school following teacher's indications; 2) a statistic application; 3) some other small app' to play with files;
+-I didn't really understand how was working windows framework;
+-I didn't know how to make custom controls;
+-I knew nothing about templates;
+-I didn't know anything about C++ STL (Standard Template Library);
+-I didn't know much about passing references instead of copies of variables or
+pointers;
+-I didn't know anything about OpenGL;
+-I never did real "computer engineering" stuff like UML;
+-I didn't knew much about Warcraft III files, how Warcraft engine uses them
+and such;
+-I started with VC++6.0 and this version compiles with VC++.NET
+-...
+Basically, I didn't know much when I started and I had no clue how I would do things! If I had to do the same kind of stuff today, that would be way
+different since I learned so many that that could have helped me and make my
+code cleaner!
+Today, I know "a lot" about all the points above and that makes a big
+difference.
+
+So, when having a look to that source code, keep all that in mind and don't
+ever be surprised by anything! If some code seems wrong then you have many
+chances to be right! If you don't understand how that works, it may be because
+I didn't do my job well, especially commenting the code. If you see many
+different ways of naming variables, that's *normal* (but shouldn't be!).
+If you see some French, just try to ignore it or translate it if you need to
+know what it means. In all case, before blaming me for anything, remember this:
+-I warned you it's a big mess and needed to be cleaned;
+-I could have never released that source code;
+-I don't ask you anything;
+-Nobody forces you to use it!
+
+
+About the use of all this:
+--------------------------
+This part is really important for beginners and young coders.
+Please, please, please, believe me, trust me and remember I did that thing and
+I have many many years of writing code behind me: this is NOT a good basis to
+start learning either how to code in C++, how to use VC++, how it works or how
+a "big" project looks-like. This is just a "patch-work" project and should be
+seen as some shit you shouldn't use to start learning. Try to find some good
+tutorials using google. If you still ignore this, and try to learn and see how
+to do some stuff with my work here, then don't be surprise to realize one day
+that your code sucks and you're doing things the wrong way: that's what I did.
+Once again: THIS CODE IS NOT HERE TO TEACH ANYTHING!
+The purpose of this source code is to be cleaned and receive some improvments.
+I definitely believe that I have more fingers than it exists people able to use
+that code with no pain. Anyway, I may be wrong and maybe some guy would clean
+the code up and bring some new strong features to that editor.
+
+If you plan to try to be that guy, please remember I did a lot of work and even
+if it was not clean, you used it so you have to give me some credits. I don't
+ask much: just a little line in a text file coming with your release saying
+I did a lot and you thank me for that and also a little "thank me" in the
+about box. ;-) That wouldn't cost you much and encourage me to release more
+clean code as I would saw what I did wasn't useless.
+It tooks me time: read the statistics in the ReadMe file!
+Thank You for reading all this!
+
+   -=Zépir oo

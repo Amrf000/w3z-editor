@@ -1,0 +1,1675 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Anglais (États-Unis) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\W3ZMapEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\W3ZMapEdit.ico"
+IDR_W3ZMAPTYPE          ICON                    "res\\W3ZMapEditDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBARS            BITMAP                  "res\\toolbar1.bmp"
+IDR_SHADOWSBAR          BITMAP                  "res\\bmp00001.bmp"
+IDR_TILESBAR            BITMAP                  "res\\bmp00003.bmp"
+IDR_DOODADSBAR          BITMAP                  "res\\doodadsb.bmp"
+IDR_ZOOMBAR             BITMAP                  "res\\zoombar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBARS TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TILESEDIT
+    BUTTON      ID_DOODADSEDIT
+    BUTTON      ID_SHADOWSEDIT
+    BUTTON      ID_PATHEDIT
+    BUTTON      ID_UNITSEDIT
+END
+
+IDR_SHADOWSBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BTN_SHAD_PEN
+    BUTTON      ID_BTN_SHAD_FILL
+    BUTTON      ID_BTN_SHAD_ERASE
+    BUTTON      ID_BTN_SHAD_SQUARE
+    BUTTON      ID_BTN_SHAD_ELIPSE
+END
+
+IDR_TILESBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BTN_TILE_PEN
+    BUTTON      ID_BTN_TILE_RECT
+    BUTTON      ID_BTN_TILE_ELLIPSE
+    BUTTON      ID_BTN_TILE_FILL
+    BUTTON      ID_BTN_TILE_REPLACE
+    SEPARATOR
+    BUTTON      ID_BTN_TILE_SELECT
+    SEPARATOR
+    BUTTON      ID_BTN_TILE_SLOPE
+    BUTTON      ID_BTN_TILE_BENDUP
+    BUTTON      ID_BTN_TILE_BENDDOWN
+    BUTTON      ID_BTN_TILE_RAND
+    BUTTON      ID_BTN_TILE_FLAT
+    SEPARATOR
+    BUTTON      ID_BTN_TILE_SLOPE_WATER
+    BUTTON      ID_BTN_TILE_BENDUP_WATER
+    BUTTON      ID_BTN_TILE_BENDDOWN_WATER
+    BUTTON      ID_BTN_TILE_RAND_WATER
+    BUTTON      ID_BTN_TILE_FLAT_WATER
+    SEPARATOR
+    BUTTON      ID_BTN_TILE_ROTATE
+    BUTTON      ID_BTN_TILE_H_MIRROR
+    BUTTON      ID_BTN_TILE_V_MIRROR
+END
+
+IDR_DOODADSBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BTN_DOOD_SELECT
+    SEPARATOR
+    BUTTON      ID_BTN_DOOD_ADD
+    BUTTON      ID_BTN_DOOD_DELETE
+    BUTTON      ID_BTN_DOOD_UPDT
+    BUTTON      ID_BTN_DOOD_MOVE
+    BUTTON      ID_BTN_DOOD_REPLACE
+    BUTTON      ID_BTN_DOOD_SPACING
+    SEPARATOR
+    BUTTON      ID_BTN_DOOD_RECT
+    BUTTON      ID_BTN_DOOD_RECT_FILL
+    BUTTON      ID_BTN_DOOD_ELLIPSE
+    BUTTON      ID_BTN_DOOD_ELLIPSE_FILL
+END
+
+IDR_ZOOMBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BTN_ZOOM_IN
+    BUTTON      ID_BTN_ZOOM_OUT
+    BUTTON      ID_BTN_ZOOM_NO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Main &Toolbar",               ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Edit Mode Bar",               ID_VIEW_EDITMODEBAR
+        MENUITEM "Toolbars Toolbar",            ID_VIEW_EDITTOOLBARSBAR
+        MENUITEM "View Mode Bar",               ID_VIEW_VIEWMODEBAR
+        MENUITEM "Zoom Bar",                    ID_VIEW_ZOOMBAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About W3ZMapEdit...",        ID_APP_ABOUT
+    END
+END
+
+IDR_W3ZMAPTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Quick Backup!\tCtrl+K",       ID_FILE_QUICKBACKUP
+        MENUITEM SEPARATOR
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "Ground map...",               ID_FILE_IMPORT_GROUNDMAP
+            MENUITEM "Path map...",                 ID_FILE_IMPORT_PATHMAP
+            MENUITEM "Minimap...",                  ID_FILE_IMPORT_MINIMAP
+            MENUITEM "Preview image...",            ID_FILE_IMPORT_PREVIEWIMAGE
+
+            MENUITEM "Custom tileset...",           ID_FILE_IMPORT_CUSTOMTILESET
+
+            MENUITEM "SLK file...",                 ID_FILE_IMPORT_SLKFILE
+            MENUITEM "Jass Script...",              ID_FILE_IMPORT_JASSSCRIPT
+
+        END
+        POPUP "Export"
+        BEGIN
+            MENUITEM "Ground map...",               ID_FILE_EXPORT_GROUNDMAP
+            MENUITEM "Path map...",                 ID_FILE_EXPORT_PATHMAP
+            MENUITEM "Statistics...",               ID_FILE_EXPORT_STATISTICS
+
+            MENUITEM "Minimap...",                  ID_FILE_EXPORT_MINIMAP
+            MENUITEM "Preview image...",            ID_FILE_EXPORT_PREVIEWIMAGE
+
+            MENUITEM "Jass Script...",              ID_FILE_EXPORT_JASSSCRIPT
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\t Alt+F4",              ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo (nothing to undo)\tCtrl+Z", ID_EDIT_UNDO
+        MENUITEM "&Redo (nothing to redo)\tCtrl+Y", ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Map Properties...\tAlt+ENTER", ID_EDIT_MAP_PROPERTIES
+        MENUITEM "Resize Map...",               ID_EDIT_MAP_RESIZEMAP
+        MENUITEM "Minimap...",                  ID_EDIT_MINIMAP
+        MENUITEM "Menu Options...",             ID_EDIT_MAP_MENUOPTIONS
+        MENUITEM "Players Properties...",       ID_EDIT_PLAYERSPROPERTIES
+        MENUITEM "Map Protection...",           ID_EDIT_MAP_PROTECTION
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Edit Mode Bar",              ID_VIEW_EDITMODEBAR
+        MENUITEM "Edit Tool&bars Bar",          ID_VIEW_EDITTOOLBARSBAR
+        MENUITEM "&View Mode Bar",              ID_VIEW_VIEWMODEBAR
+        MENUITEM "&Zoom Bar",                   ID_VIEW_ZOOMBAR
+        MENUITEM "3D View\tCtrl+3",             ID_VIEW_3DVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "St&atistics...\tF2",          ID_VIEW_STATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+    END
+    MENUITEM "&Plugins...",                 ID_PLUGINS
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Settings...",                 ID_OPTIONS_PREFERENCES
+        MENUITEM "Save Settings",               ID_OPTIONS_SAVESETTINGS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Ho&w to...",                  ID_HELP_HOWTO
+        MENUITEM SEPARATOR
+        MENUITEM "&About W3ZMapEdit...",        ID_APP_ABOUT
+    END
+END
+
+IDR_POPUPS MENU 
+BEGIN
+    POPUP "TilePoint Bar Popup"
+    BEGIN
+        MENUITEM "&Properties...",              ID_POPTPB_PROPERTIES
+        MENUITEM "&Help",                       ID_POPTPB_HELP
+    END
+    POPUP "Doodad Bar Popup"
+    BEGIN
+        MENUITEM "&Properties...",              ID_POPDB_PROPERTIES
+        MENUITEM "&Help",                       ID_POPDB_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "3",            ID_VIEW_3DVIEW,         VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_FILE_QUICKBACKUP,    VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_BACK,        ID_EDIT_REDO,           VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_VIEW_STATISTICS,     VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      ID_EDIT_MAP_PROPERTIES, VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 166, 169
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About W3ZMapEdit"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,6,6,20,20
+    LTEXT           "W3ZMapEdit V. 1.0 final",IDC_STATIC,36,6,128,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002, Zépir",IDC_STATIC,6,123,81,8
+    DEFPUSHBUTTON   "OK",IDOK,126,150,35,14,WS_GROUP
+    GROUPBOX        "",IDC_STATICQUAD,6,42,153,78
+    LTEXT           "-=Zépir oo",IDC_STATICZEP,18,60,33,8
+    LTEXT           "Coder:",IDC_STATIC,6,33,22,8
+    CONTROL         "Infos",IDC_SCRINFOS,"Static",SS_LEFTNOWORDWRAP,36,21,
+                    120,8
+    LTEXT           "Thanks to ShadowFlare for SFMPQAPI",IDC_STATIC,10,138,
+                    124,8
+END
+
+IDD_BAR_EDITMODE DIALOGEX 0, 0, 129, 18
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_EDITMODE,66,2,60,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP,0,HIDC_EDITMODE
+    LTEXT           "Preselected Mode:",IDC_STATIC,4,4,60,8
+END
+
+IDD_BAR_TILE DIALOGEX 0, 0, 62, 355
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " Texture ",IDC_STATIC,4,2,54,93
+    CONTROL         "Grnd type:",IDC_CHK_GROUND_TYPE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,12,46,10,0,HIDC_CHK_GROUND_TYPE
+    CONTROL         "Cliff type:",IDC_CHK_CLIFF_TYPE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,39,46,10,0,HIDC_CHK_CLIFF_TYPE
+    CONTROL         "Details:",IDC_CHK_DETAILS,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,66,46,10,0,HIDC_CHK_DETAILS
+    GROUPBOX        " Level ",IDC_STATIC,4,95,54,93
+    CONTROL         "Layer:",IDC_CHK_LAYER,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,104,46,10,0,HIDC_CHK_LAYER
+    CONTROL         "Height:",IDC_CHK_TILEPOINT_HEIGHT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,132,46,10,0,HIDC_CHK_TILEPOINT_HEIGHT
+    CONTROL         "Water lvl:",IDC_CHK_WATER_LEVEL,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,158,46,10,0,HIDC_CHK_WATER_LEVEL
+    GROUPBOX        " W.E. values ",IDC_STATIC,4,190,54,68
+    LTEXT           "Ground level:",IDC_STATIC,8,203,43,8
+    LTEXT           "Water Level:",IDC_STATIC,8,232,42,8
+    GROUPBOX        " Flags ",IDC_STATIC,4,262,54,90
+    CONTROL         "Ramp",IDC_CHK_TILE_RAMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,272,35,10,0,HIDC_CHK_TILE_RAMP
+    CONTROL         "Blight",IDC_CHK_TILE_BLIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,282,33,10,0,HIDC_CHK_TILE_BLIGHT
+    CONTROL         "Water",IDC_CHK_TILE_WATER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,292,35,10,0,HIDC_CHK_TILE_WATER
+    CONTROL         "Boundary",IDC_CHK_TILE_MINIMAPSHD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,302,46,10,0,
+                    HIDC_CHK_TILE_MINIMAPSHD
+    CONTROL         "W.E.\nboundary",IDC_CHK_TILE_SHADOW,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,8,
+                    314,46,18,0,HIDC_CHK_TILE_SHADOW
+    COMBOBOX        IDC_CMB_TILE_GROUND,7,23,48,55,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_CMB_TILE_GROUND
+    COMBOBOX        IDC_CMB_TILE_CLIFF,7,50,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_CMB_TILE_CLIFF
+    EDITTEXT        IDC_EDT_TILE_DETAILS,7,77,45,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDT_TILE_DETAILS
+    CONTROL         "Spin1",IDC_SPN_DETAILS,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK | 
+                    WS_TABSTOP,49,77,11,14
+    EDITTEXT        IDC_EDT_TILE_LAYER,7,116,45,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDT_TILE_LAYER
+    CONTROL         "Spin2",IDC_SPN_LAYER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK | WS_TABSTOP,48,116,11,14
+    EDITTEXT        IDC_EDT_TILE_HEIGHT,7,142,45,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDT_TILE_HEIGHT
+    CONTROL         "Spin3",IDC_SPN_HEIGHT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK | WS_TABSTOP,48,142,11,14
+    EDITTEXT        IDC_EDT_TILE_WATER_LEVEL,8,168,45,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDT_TILE_WATER_LEVEL
+    CONTROL         "Spin4",IDC_SPN_WATER_LEVEL,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK | 
+                    WS_TABSTOP,48,168,11,14
+    EDITTEXT        IDC_EDT_GROUND_LEVEL,8,212,46,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDT_GROUND_LEVEL
+    EDITTEXT        IDC_EDT_WATER_LEVEL,8,241,46,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,0,HIDC_EDT_WATER_LEVEL
+    EDITTEXT        IDC_EDTFLAGS,8,334,45,14,ES_AUTOHSCROLL,0,HIDC_EDTFLAGS
+END
+
+IDD_BAR_DOODADS DIALOGEX 0, 0, 62, 347
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " Properties ",IDC_STATIC,4,2,54,276
+    EDITTEXT        IDC_EDT_DOO_TYPE,8,26,46,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_DOO_VARIATION,8,54,46,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coordinates:",IDC_STATIC,8,70,40,8
+    LTEXT           "X:",IDC_STATIC,6,83,8,8
+    EDITTEXT        IDC_EDT_DOO_X,14,81,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,6,99,8,8
+    EDITTEXT        IDC_EDT_DOO_Y,14,97,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z:",IDC_STATIC,6,115,8,8
+    EDITTEXT        IDC_EDT_DOO_Z,14,113,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOO_ANGLE,8,141,46,14,ES_AUTOHSCROLL
+    LTEXT           "Scale:",IDC_STATIC,8,159,21,8
+    EDITTEXT        IDC_EDT_DOO_SC_X,18,169,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOO_SC_Y,18,185,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOO_SC_Z,18,201,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOO_LIFE,8,229,46,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Tree number:",IDC_STATIC,8,248,43,8
+    EDITTEXT        IDC_EDT_DOO_ID,8,258,46,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        " Flags ",IDC_STATIC,4,283,54,59
+    CONTROL         "Non-solid",IDC_CHK_DOO_NON_SOLID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,296,45,10,0,
+                    HIDC_CHK_DOO_NON_SOLID
+    CONTROL         "Normal",IDC_CHK_DOO_NORMAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,308,38,10,0,HIDC_CHK_DOO_NORMAL
+    EDITTEXT        IDC_EDT_DOO_FLAGS,8,322,46,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Type:",IDC_CHK_DOODAD_TYPE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,14,46,10,0,HIDC_CHK_DOODAD_TYPE
+    CONTROL         "Variation:",IDC_CHK_DOODAD_VARIATION,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,8,44,46,10,0,
+                    HIDC_CHK_DOODAD_VARIATION
+    CONTROL         "Angle:",IDC_CHK_DOODAD_ANGLE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,130,46,10,0,HIDC_CHK_DOODAD_ANGLE
+    CONTROL         "X:",IDC_CHK_DOODAD_SCALE_X,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,6,169,12,13,0,HIDC_CHK_DOODAD_SCALE_X
+    CONTROL         "Y:",IDC_CHK_DOODAD_SCALE_Y,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,185,12,13,0,HIDC_CHK_DOODAD_SCALE_Y
+    CONTROL         "Z:",IDC_CHK_DOODAD_SCALE_Z,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,6,201,12,13,0,HIDC_CHK_DOODAD_SCALE_Z
+    CONTROL         "Life (%):",IDC_CHK_DOODAD_LIFE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,8,218,46,10,0,HIDC_CHK_DOODAD_LIFE
+END
+
+IDD_BAR_UNITS DIALOGEX 0, 0, 62, 143
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Unit type:",IDC_STATIC,8,14,31,8,WS_DISABLED
+    LTEXT           "Owner:",IDC_STATIC,8,42,24,8,WS_DISABLED
+    COMBOBOX        IDC_CMB_UNIT_OWNER,8,50,48,30,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coordinates:",IDC_STATIC,8,67,40,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_UNIT_X,14,77,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_UNIT_Y,14,93,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    LTEXT           "X:",IDC_STATIC,6,79,8,8,WS_DISABLED
+    LTEXT           "Y:",IDC_STATIC,6,95,8,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_UNIT_TYPE,8,23,44,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        " Properties ",IDC_STATIC,4,2,54,138,WS_DISABLED
+    PUSHBUTTON      "Additional properties",IDC_BTN_UNIT_ADD_PROP,10,114,42,
+                    20,BS_MULTILINE | WS_DISABLED
+END
+
+IDD_PAGE_MAPPROP DIALOG  0, 0, 377, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Main Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Map name:",IDC_STATIC,4,2,36,8
+    EDITTEXT        IDC_EDT_MAPNAME,4,11,171,14,ES_AUTOHSCROLL
+    LTEXT           "Map author:",IDC_STATIC,180,1,39,8
+    EDITTEXT        IDC_EDT_MAPAUTHOR,180,11,171,14,ES_AUTOHSCROLL
+    LTEXT           "Map description:",IDC_STATIC,4,28,53,8
+    EDITTEXT        IDC_EDT_MAPDESC,4,39,348,45,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "Suggested players:",IDC_STATIC,4,86,61,8
+    EDITTEXT        IDC_EDT_MAPPLAYREC,4,98,246,14,ES_AUTOHSCROLL
+    LTEXT           "Max number of players (value):",IDC_STATIC,254,86,97,8
+    EDITTEXT        IDC_EDT_MAPNBPLAYERS,254,98,98,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Tilesets",IDC_STATIC,4,116,246,108
+    LTEXT           "Main tileset (ground type):",IDC_STATIC,8,128,82,8
+    COMBOBOX        IDC_CMB_MAPTYPE,8,138,238,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use custom tilesets",IDC_CHK_CUSTOM_TILESETS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,153,77,10
+    LTEXT           "Ground tilesets:",IDC_STATIC,8,168,50,8
+    EDITTEXT        IDC_EDT_MAPGROUND,8,178,220,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_GROUND_TILESETS,230,178,15,14,WS_DISABLED
+    LTEXT           "Cliff tilesets:",IDC_STATIC,8,195,38,8
+    EDITTEXT        IDC_EDT_MAPCLIFF,8,204,220,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_CLIFF_TILESETS,230,204,16,14,WS_DISABLED
+    LTEXT           "Map version:",IDC_STATIC,254,116,42,8
+    EDITTEXT        IDC_EDT_MAP_VER,254,126,98,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Editor version:",IDC_STATIC,254,146,46,8
+    EDITTEXT        IDC_EDT_EDITOR_VER,254,155,98,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Waves on cliff shores",IDC_CHK_WAVESCLIFF,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,254,
+                    174,96,10
+    CONTROL         "Waves on rolling shores",IDC_CHK_WAVESROLLING,"Button",
+                    BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,254,
+                    184,96,10
+    CONTROL         "Melee map",IDC_CHK_MELEE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,196,51,10
+    CONTROL         "Masked areas are partially visible",IDC_CHK_FL_UNKNOWN0,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,254,206,119,10
+    CONTROL         "Hide minimap in preview screens",IDC_CHK_FL_UNKNOWN1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,254,216,119,10
+END
+
+IDD_BAR_VIEWMODE DIALOGEX 0, 0, 62, 203
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " View Mode ",IDC_STATIC,4,2,54,98
+    CONTROL         "Level",IDC_RAD_LEVEL,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_NOTIFY | WS_TABSTOP,8,14,44,10
+    CONTROL         "Tiles",IDC_RAD_TILES,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_NOTIFY | WS_TABSTOP,8,26,44,10
+    CONTROL         "Doodads",IDC_CHK_DOODADS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,38,44,10
+    CONTROL         "Path",IDC_CHK_PATH,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,50,44,10
+    CONTROL         "Shadows",IDC_CHK_SHADOWS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,62,44,10
+    CONTROL         "Units",IDC_CHK_UNITS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,74,44,10
+    CONTROL         "Players",IDC_CHK_PLAYERS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_DISABLED | WS_TABSTOP,8,86,44,10
+    GROUPBOX        " Tiles ",IDC_STATIC,4,104,54,96
+    CONTROL         "Ramps",IDC_CHK_TILES_RAMPS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,130,44,10
+    CONTROL         "Blights",IDC_CHK_TILES_BLIGHTS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,144,44,10
+    CONTROL         "Water",IDC_CHK_TILES_WATER,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,158,44,10
+    CONTROL         "Boundaries",IDC_CHK_TILES_BOUNDARIES,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,8,172,44,10
+    CONTROL         "WE Bounds",IDC_CHK_TILES_WEBOUNDS,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,8,186,44,10
+    CONTROL         "Layers",IDC_CHK_TILES_LAYERS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,8,116,44,10
+END
+
+IDD_PAGE_PLAYERSPROP DIALOG  0, 0, 377, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Players Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Players",IDC_STATIC,4,2,348,224
+    LTEXT           "Name:",IDC_STATIC,56,12,22,8
+    LTEXT           "Star pos. X",IDC_STATIC,136,12,36,8
+    LTEXT           "Start pos. Y",IDC_STATIC,180,12,38,8
+    LTEXT           "Force:",IDC_STATIC,224,12,21,8
+    CONTROL         "Player 1",IDC_CHK_PLAYER01,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,28,41,10
+    EDITTEXT        IDC_EDT_NAME_01,56,24,76,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_X_01,136,24,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_Y_01,180,24,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_FORCE01,224,24,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Player 2",IDC_CHK_PLAYER02,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,44,41,10
+    CONTROL         "Player 4",IDC_CHK_PLAYER04,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,60,41,10
+    CONTROL         "Player 5",IDC_CHK_PLAYER05,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,76,41,10
+    CONTROL         "Player 6",IDC_CHK_PLAYER06,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,92,41,10
+    CONTROL         "Player 7",IDC_CHK_PLAYER07,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,108,41,10
+    CONTROL         "Player 8",IDC_CHK_PLAYER08,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,124,41,10
+    CONTROL         "Player 9",IDC_CHK_PLAYER09,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,140,41,10
+    CONTROL         "Player 10",IDC_CHK_PLAYER10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,156,45,10
+    CONTROL         "Player 11",IDC_CHK_PLAYER11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,172,45,10
+    CONTROL         "Player 12",IDC_CHK_PLAYER12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,188,45,10
+    LTEXT           "BETA: not implemented yet!",IDC_STATIC,123,91,88,8
+END
+
+IDD_DLG_DOODADTOOL_PROP DIALOG  0, 0, 160, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Doodad Tool Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,182,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,182,50,14
+    LTEXT           "Random types list:",IDC_STATIC,4,4,58,8
+    LTEXT           "Random variation:",IDC_STATIC,4,20,58,8
+    LTEXT           "Trees spacing:",IDC_STATIC,4,36,48,8
+    LTEXT           "Random angle range:",IDC_STATIC,4,52,69,8
+    LTEXT           "Random scale range:",IDC_STATIC,4,68,68,8
+    LTEXT           "X max:",IDC_STATIC,72,82,22,8
+    LTEXT           "X min:",IDC_STATIC,4,82,20,8
+    LTEXT           "Y min:",IDC_STATIC,4,98,20,8
+    LTEXT           "Y max:",IDC_STATIC,72,98,22,8
+    LTEXT           "Z min:",IDC_STATIC,4,116,20,8
+    LTEXT           "Z max:",IDC_STATIC,72,116,22,8
+    LTEXT           "Random life range:",IDC_STATIC,4,138,60,8
+    EDITTEXT        IDC_EDT_DOODADS_TYPE_LIST,64,2,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_VARIATION,64,18,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_DOODADS_SPACING,64,34,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_DOODADS_ANGLE,76,50,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_EDT_DOODADS_MINSCALE_X,26,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_MINSCALE_Y,26,96,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_MINSCALE_Z,26,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_MAXSCALE_X,96,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_MAXSCALE_Y,96,96,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_MAXSCALE_Z,96,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DOODADS_MIN_LIFE,20,146,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_DOODADS_MAX_LIFE,82,146,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "min:",IDC_STATIC,4,148,14,8
+    LTEXT           "max:",IDC_STATIC,64,148,16,8
+    LTEXT           "Doodads pen size:",IDC_STATIC,4,167,60,8
+    EDITTEXT        IDC_EDT_DOODADS_PEN_SIZE,68,164,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_DLG_TILEPOINTTOOL_PROP DIALOG  0, 0, 152, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TilePoint Tool Properites"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,68,50,14
+    LTEXT           "Random details range:",IDC_STATIC,4,4,72,8
+    LTEXT           "Random ground level amplitude:",IDC_STATIC,4,20,102,8
+    LTEXT           "Random water amplitude:",IDC_STATIC,4,36,81,8
+    EDITTEXT        IDC_EDT_DETAILS_RANGE,108,2,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_GRND_HEIGHT_AMP,108,18,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_WATER_HEIGHT_AMP,108,34,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Tilepoint pen size:",IDC_STATIC,4,52,58,8
+    EDITTEXT        IDC_EDT_TILEPOINT_PEN_SIZE,108,50,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_DLG_OPTIONS DIALOG  0, 0, 190, 274
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "W3Z Map Editor Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,6,256,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,132,256,50,14
+    LTEXT           "Undo level:",IDC_STATIC,10,14,37,8
+    EDITTEXT        IDC_EDT_UNDO_LVL,50,12,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Directory for temporary files:",IDC_STATIC,8,30,88,8
+    EDITTEXT        IDC_EDT_TEMP_DIR,98,28,82,14,ES_AUTOHSCROLL
+    GROUPBOX        " Save Options ",IDC_STATIC,4,70,182,46
+    LTEXT           "Boundaries shadow factor:",IDC_STATIC,10,132,85,8
+    LTEXT           "TilePoint level factor:",IDC_STATIC,10,144,67,8
+    LTEXT           "Layer 1:",IDC_STATIC,16,170,26,8
+    GROUPBOX        " System options ",IDC_STATIC,4,2,182,66
+    GROUPBOX        " Display options ",IDC_STATIC,4,120,182,132
+    GROUPBOX        " Layer colors ",IDC_STATIC,10,156,166,88
+    CONTROL         "Auto-save each",IDC_CHK_AUTO_SAVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,102,66,10
+    LTEXT           "minutes",IDC_STATIC,116,104,25,8
+    EDITTEXT        IDC_EDT_AUTOSAVE_TIME,74,100,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_BOUND_FACTOR,114,128,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_LEVEL_FACTOR,114,144,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Do not display warning boxes",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,50,108,10
+    LTEXT           "Path format:",IDC_STATIC,8,82,39,8
+    CONTROL         "Path Map (WPM)",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,78,71,10
+    CONTROL         "TGA file (PathTGA)",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,88,77,10
+END
+
+IDD_PAGE_MAPSIZE DIALOG  0, 0, 377, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Size And Camera Bounds"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Map size (tiles units)",IDC_STATIC,4,2,102,114
+    LTEXT           "Map width:",IDC_STATIC,10,14,36,8
+    LTEXT           "Map height:",IDC_STATIC,60,14,38,8
+    EDITTEXT        IDC_EDT_MAPWIDTH,10,26,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "x",IDC_STATIC,51,30,8,8
+    EDITTEXT        IDC_EDT_MAPHEIGHT,60,26,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Rescale",IDC_RAD_RESCALE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP | WS_TABSTOP,10,46,42,10
+    CONTROL         "Cut out",IDC_RAD_CUTOUT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_TABSTOP,10,58,39,10
+    LTEXT           "Offset (from bottom left):",IDC_STATIC,22,69,76,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_CUTOFS_X,12,78,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           ",",IDC_STATIC,54,84,8,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_CUTOFS_Y,62,78,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Playable area size (tiles units):",IDC_STATIC,110,2,102,
+                    114
+    LTEXT           "Width:",IDC_STATIC,116,16,22,8
+    LTEXT           "Height:",IDC_STATIC,166,16,24,8
+    EDITTEXT        IDC_EDT_PLAY_WIDTH,116,26,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,157,30,8,8
+    EDITTEXT        IDC_EDT_PLAY_HEIGHT,166,26,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Bottom left (x, y):",IDC_STATIC,116,42,53,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_PLAY_WIDTH2,116,52,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           ",",IDC_STATIC,158,58,8,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_PLAY_HEIGHT2,166,52,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Top right (x, y):",IDC_STATIC,116,69,48,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_PLAY_WIDTH3,116,79,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           ",",IDC_STATIC,158,85,8,8,WS_DISABLED
+    EDITTEXT        IDC_EDT_PLAY_HEIGHT3,166,79,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Default",IDC_BUTTON2,116,96,90,14,WS_DISABLED
+    GROUPBOX        "Camera bounds",IDC_STATIC,216,2,136,114
+    LTEXT           "X:",IDC_STATIC,278,12,8,8
+    LTEXT           "Y:",IDC_STATIC,322,12,8,8
+    LTEXT           "Bottom left:",IDC_STATIC,222,24,36,8
+    EDITTEXT        IDC_EDT_BOTTOM_LEFT_X,264,22,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_BOTTOM_LEFT_Y,308,22,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Top right:",IDC_STATIC,222,44,31,8
+    EDITTEXT        IDC_EDT_TOP_RIGHT_X,264,40,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_TOP_RIGHT_Y,308,40,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Top left:",IDC_STATIC,222,61,27,8
+    EDITTEXT        IDC_EDT_TOP_LEFT_X,264,58,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_TOP_LEFT_Y,308,58,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Bottom right:",IDC_STATIC,222,78,40,8
+    EDITTEXT        IDC_EDT_BOTTOM_RIGHT_X,264,76,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_BOTTOM_RIGHT_Y,308,76,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Compute camera bounds",IDC_BTN_COMPUTECAMBNDS,222,96,
+                    126,14,WS_DISABLED
+END
+
+IDD_PAGE_MAPPROTECT DIALOG  0, 0, 377, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Register Password",IDC_BTN_REGISTER,4,4,68,14
+    LTEXT           "Status: ",IDC_STATIC,4,22,25,8
+    LTEXT           "Unregistered",IDC_STA_REGISTERED,30,22,322,8
+    LTEXT           "Original Author Name:",IDC_STATIC,4,34,70,8
+    EDITTEXT        IDC_EDT_ORG_AUTHOR_NAME,76,32,276,14,ES_AUTOHSCROLL
+    CONTROL         "Enable protection",IDC_CHK_ENABLE_PROTECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,49,71,10
+    GROUPBOX        "Protection info",IDC_STATIC,6,61,348,58
+    LTEXT           "Protection type:",IDC_STATIC,10,73,50,8
+    COMBOBOX        IDC_CMB_PROTECTTYPE,10,81,338,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Protection version:",IDC_STATIC,10,101,60,8
+    EDITTEXT        IDC_EDT_PROTECTVER,72,99,274,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Protection Level",IDC_STATIC,4,123,144,50
+    CONTROL         "Level 1 (watermark only)",IDC_RAD_PROTECTLVL1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,8,135,93,10
+    CONTROL         "Level 2 (watermark + WE read only)",IDC_RAD_PROTECTLVL2,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_TABSTOP,8,
+                    147,129,10
+    CONTROL         "Level 3 (watermark + WE blocked)",IDC_RAD_PROTECTLVL3,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,8,158,125,10
+    GROUPBOX        "Options",IDC_STATIC,152,123,200,50
+    CONTROL         "Make an unprotected backup first",IDC_CHK_PROTECTBACKUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,156,135,123,10
+    CONTROL         "Include unprotect record",IDC_CHK_PROTECTUNPREC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,156,147,93,10
+    CONTROL         "Display author and map names when the map starts",
+                    IDC_CHK_PROTECTAUTHORMSG,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,156,158,178,10
+    GROUPBOX        "Password options",IDC_STATIC,4,175,144,50
+    LTEXT           "Author password:\n(full access)",IDC_STATIC,8,185,58,18
+    EDITTEXT        IDC_EDT_PROTECTAPASS,70,185,74,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Public password:\n(restricted access)",IDC_STATIC,8,205,
+                    60,18
+    EDITTEXT        IDC_EDT_PROTECTPPASS,70,205,74,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Protection status",IDC_STATIC,152,175,200,50,
+                    WS_DISABLED
+    LTEXT           "Status",IDC_STC_PROTECTSTATUS,158,187,188,32,
+                    WS_DISABLED
+END
+
+IDD_DLG_PROTECT_PASS DIALOG  0, 0, 164, 53
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDT_PASSWORD,6,16,156,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "This map is protected, please enter the password:",
+                    IDC_STATIC,4,4,157,8
+    DEFPUSHBUTTON   "OK",IDOK,10,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,34,50,14
+END
+
+IDD_PAGE_MAPMENUOPT DIALOG  0, 0, 377, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Menu options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Loading screen:",IDC_STATIC,4,4,52,8
+    LTEXT           "Campaign screen:",IDC_STATIC,4,76,58,8
+    LTEXT           "BETA: not implemented yet!",IDC_STATIC,123,91,88,8
+END
+
+IDD_DLG_STATISTICS DIALOG  0, 0, 312, 245
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Map Statistics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,228,50,14
+    EDITTEXT        IDC_EDT_STATISTICS,2,2,308,224,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+END
+
+IDD_BAR_PATHING DIALOGEX 0, 0, 62, 199
+STYLE DS_SETFONT | WS_CHILD
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "No walk",IDC_BTN_PATH_NOWALK,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,2,38,14
+    LTEXT           "Pen size:",IDC_STATIC,4,171,30,8
+    EDITTEXT        IDC_EDT_PATH_PEN_SIZE,4,180,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "",IDC_STA_PATH_NOWALK,2,2,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    CONTROL         "No fly",IDC_BTN_PATH_NOFLY,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,34,38,14
+    CONTROL         "No build",IDC_BTN_PATH_NOBUILD,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,18,38,14
+    LTEXT           "",IDC_STC_PATH_NOFLY,2,34,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    LTEXT           "",IDC_STA_PATH_NOBUILD,2,18,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    CONTROL         "Blight",IDC_BTN_PATH_BLIGHT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,66,38,14
+    CONTROL         "No water",IDC_BTN_PATH_NOWATER,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,50,38,14
+    LTEXT           "",IDC_STC_PATH_BLIGHT,2,66,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    LTEXT           "",IDC_STA_PATH_NOWATER,2,50,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    CONTROL         "Unknown",IDC_BTN_PATH_UNKNOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,82,38,14
+    LTEXT           "",IDC_STC_PATH_UNKNOWN,2,82,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    LTEXT           "Current\n path color",IDC_STATIC,19,131,38,18,NOT 
+                    WS_GROUP,WS_EX_STATICEDGE
+    PUSHBUTTON      "Reset pathing",IDC_BTN_PATH_RESET,1,153,56,14
+    CONTROL         "",IDC_STC_PATH_CURRENT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,2,132,16,14
+    CONTROL         "Unkn01",IDC_BTN_PATH_UNKN01,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,98,38,14
+    LTEXT           "",IDC_STC_PATH_UNKN01,2,98,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+    CONTROL         "Unkn02",IDC_BTN_PATH_UNKN02,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,20,114,38,14
+    LTEXT           "",IDC_STC_PATH_UNKN02,2,114,16,14,WS_BORDER | NOT 
+                    WS_GROUP
+END
+
+IDD_DLG_PROGRESS DIALOGEX 0, 0, 204, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Please Wait..."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "I'm busy, please wait...",IDC_STA_PROGRESSMSG,4,2,196,
+                    34,NOT WS_GROUP,WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_PRGS_PROGRESSBAR,"msctls_progress32",
+                    WS_BORDER | 0x1,4,38,196,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,74,58,50,14,WS_DISABLED
+END
+
+IDD_PAGE_MINIMAP DIALOG  0, 0, 377, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Minimap"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Hide minimap in preview sreens",IDC_CHK_HIDEMINIMAP,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,4,2,115,
+                    10
+    PUSHBUTTON      "Reset icons",IDC_BTN_MINIMAP_RESET,66,26,58,14
+    PUSHBUTTON      "Remove all icons",IDC_BTN_MINIMAP_REMOVEALL,4,42,58,14
+    PUSHBUTTON      "Update Picture",IDC_BTN_UPDATEPIC,4,26,58,14
+    PUSHBUTTON      "Import custom...",IDC_BTN_IMPORTMINIMAP,4,58,58,14
+    PUSHBUTTON      "Export minimap...",IDC_BTN_EXPORTMINIMAP,66,58,58,14
+    GROUPBOX        "Minimap",IDC_STATIC,130,2,122,110
+    GROUPBOX        "Icons",IDC_STATIC,256,2,96,110
+    LTEXT           "Type:",IDC_STATIC,262,14,19,8
+    COMBOBOX        IDC_CMB_MINIMAP_ICONS,262,24,86,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Color:",IDC_STATIC,262,42,19,8
+    LTEXT           "",IDC_STA_MINIMAP_ICONCOLOR,286,40,15,15,WS_BORDER | 
+                    NOT WS_GROUP
+    PUSHBUTTON      "...",IDC_BTN_MINIMAP_COLORS,306,40,17,14
+    CONTROL         "Add icon",IDC_RAD_MINIMAP_ADD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,262,60,44,10
+    CONTROL         "Select Icon",IDC_RAD_MINIMAP_SELECT,"Button",
+                    BS_AUTORADIOBUTTON,262,70,52,10
+    CONTROL         "Remove Icon",IDC_RAD_MINIMAP_REMOVE,"Button",
+                    BS_AUTORADIOBUTTON,262,82,59,10
+    CONTROL         "Include preview minimap",IDC_CHK_INCLUDEPREVIEW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,114,93,10
+    PUSHBUTTON      "Import preview...",IDC_BTN_IMPORTPREVIEW,4,126,84,14
+    LTEXT           "The preview minimap appears on preview screens when creating a new game. It's also shown while the map is loaded.",
+                    IDC_STATIC,4,144,122,36
+    GROUPBOX        "Preview Minimap",IDC_STATIC,130,114,122,110
+    LTEXT           "BETA: not implemented yet!",IDC_STATIC,144,86,88,8
+    CONTROL         "Masked areas are partially visible",IDC_CHK_PARTIALVIS,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,4,12,119,10
+END
+
+IDD_DLG_NEWMAP DIALOG  0, 0, 344, 245
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Map Generator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,226,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,278,226,50,14
+    LTEXT           "Random ground height range:",IDC_STATIC,4,4,95,8
+    LTEXT           "Main tileset:",IDC_STATIC,4,14,38,8
+    LTEXT           "Walkable water (%):",IDC_STATIC,4,26,64,8
+    LTEXT           "Deep Water (%):",IDC_STATIC,4,38,53,8
+    LTEXT           "Forest (%):",IDC_STATIC,4,54,34,8
+END
+
+IDD_DLG_SCM_CONVOPT DIALOGEX 0, 0, 244, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Starcraft Map Conversion Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Map Ratio",IDC_STATIC,6,6,228,72
+    CONTROL         "Keep original map dimensions (map will look bigger in War3)",
+                    IDC_RAD_SCM_SAMEDIM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,18,204,10
+    CONTROL         "Same height, half width (keeps square angles)",
+                    IDC_RAD_SCM_ANGLES,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,30,164,10
+    CONTROL         "Rotate 45° (may be usefull to get flat walls)",
+                    IDC_CHK_SCM_45DEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,42,156,10
+    CONTROL         "Reduce map size by 2",IDC_RAD_SCM_EVEN,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,12,54,85,10
+    CONTROL         "Smoothed edges",IDC_CHK_SCM_SMOOTH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,84,69,10
+    CONTROL         "Increase map size for boundaries",IDC_CHK_SCM_BOUNDS,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,6,96,
+                    122,10
+    DEFPUSHBUTTON   "OK",IDOK,96,114,50,14
+END
+
+IDD_DLG_PLUGIN_RUN DIALOGEX 0, 0, 178, 226
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Running plugin..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Terminate!",IDCANCEL,114,204,50,14
+    LTEXT           "W3ZME is waiting for a plugin to finish its work. When the plugin will be done, this dialog box will self-close. Just wait!",
+                    IDC_STATIC,6,6,162,30
+    EDITTEXT        IDC_EDT_PLUG_PLUGNAME,6,150,162,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDT_PLUG_FILENAME,6,180,162,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Plugin Name:",IDC_STATIC,6,138,42,8
+    LTEXT           "Processing file:",IDC_STATIC,6,168,49,8
+    PUSHBUTTON      "Stop waiting",IDOK,12,204,50,14
+    LTEXT           "-If the plugin has finished its work but doesn't need to be closed, then use the ""Stop waiting"" button.",
+                    IDC_STATIC,6,42,162,30
+    LTEXT           "-If you think the plugin takes too long or is crashed, you can try to stop it using the ""Terminate!"" button.",
+                    IDC_STATIC,6,72,162,33
+    LTEXT           "Read the manual for details.",IDC_STATIC,6,108,162,24
+END
+
+IDD_DLG_RUN_PLUGIN DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Run Plugin"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Run!",IDOK,24,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,72,50,14
+    COMBOBOX        IDC_CMB_PLUGIN_LIST,6,18,168,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select plugin:",IDC_STATIC,6,6,44,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,0,0
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "W3ZMapEdit MFC Application"
+            VALUE "FileVersion", "0, 1, 0, 0"
+            VALUE "InternalName", "W3ZMapEdit"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "W3ZMapEdit.EXE"
+            VALUE "ProductName", "W3ZMapEdit Application"
+            VALUE "ProductVersion", "0, 1, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_BAR_EDITMODE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 15
+    END
+
+    IDD_BAR_TILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_BAR_DOODADS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_BAR_UNITS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_PAGE_MAPPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_BAR_VIEWMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_PAGE_PLAYERSPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DLG_DOODADTOOL_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DLG_TILEPOINTTOOL_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DLG_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_PAGE_MAPSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_PAGE_MAPPROTECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DLG_PROTECT_PASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_PAGE_MAPMENUOPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DLG_STATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_BAR_PATHING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_DLG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_PAGE_MINIMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+
+    IDD_DLG_NEWMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DLG_SCM_CONVOPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DLG_PLUGIN_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_DLG_RUN_PLUGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BAR_EDITMODE DLGINIT
+BEGIN
+    IDC_EDITMODE, 0x403, 7, 0
+0x7247, 0x756f, 0x646e, "\000" 
+    IDC_EDITMODE, 0x403, 8, 0
+0x6f44, 0x646f, 0x6461, 0x0073, 
+    IDC_EDITMODE, 0x403, 6, 0
+0x6e55, 0x7469, 0x0073, 
+    IDC_EDITMODE, 0x403, 5, 0
+0x6150, 0x6874, "\000" 
+    IDC_EDITMODE, 0x403, 8, 0
+0x6853, 0x6461, 0x776f, 0x0073, 
+    0
+END
+
+IDD_BAR_DOODADS DLGINIT
+BEGIN
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0030, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0031, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0032, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0033, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0035, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0036, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0037, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_DOO_VARIATION, 0x403, 2, 0
+0x0039, 
+    IDC_CMB_DOO_VARIATION, 0x403, 3, 0
+0x3031, "\000" 
+    0
+END
+
+IDD_BAR_UNITS DLGINIT
+BEGIN
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3120, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3220, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3320, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3420, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3520, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3620, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3720, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3820, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 9, 0
+0x6c50, 0x7961, 0x7265, 0x3920, "\000" 
+    IDC_CMB_UNIT_OWNER, 0x403, 10, 0
+0x6c50, 0x7961, 0x7265, 0x3120, 0x0030, 
+    IDC_CMB_UNIT_OWNER, 0x403, 10, 0
+0x6c50, 0x7961, 0x7265, 0x3120, 0x0031, 
+    IDC_CMB_UNIT_OWNER, 0x403, 10, 0
+0x6c50, 0x7961, 0x7265, 0x3120, 0x0032, 
+    IDC_CMB_UNIT_OWNER, 0x403, 16, 0
+0x654e, 0x7475, 0x6172, 0x206c, 0x6150, 0x7373, 0x7669, 0x0065, 
+    IDC_CMB_UNIT_OWNER, 0x403, 18, 0
+0x654e, 0x7475, 0x6172, 0x206c, 0x6741, 0x6572, 0x7373, 0x7669, 0x0065, 
+
+    0
+END
+
+IDD_PAGE_MAPPROTECT DLGINIT
+BEGIN
+    IDC_CMB_PROTECTTYPE, 0x403, 23, 0
+0x6f4e, 0x7020, 0x6f72, 0x6574, 0x7463, 0x6f69, 0x206e, 0x7974, 0x6570, 
+0x7320, 0x7465, "\000" 
+    IDC_CMB_PROTECTTYPE, 0x403, 36, 0
+0x6e55, 0x756c, 0x6b63, 0x5f79, 0x6f46, 0x746f, 0x616d, 0x2d6e, 0x6557, 
+0x6161, 0x6464, 0x7261, 0x5020, 0x6f72, 0x6574, 0x7463, 0x6f69, 0x006e, 
+
+    IDC_CMB_PROTECTTYPE, 0x403, 19, 0
+0x3357, 0x205a, 0x614d, 0x2070, 0x7250, 0x746f, 0x6365, 0x6974, 0x6e6f, 
+"\000" 
+    IDC_CMB_PROTECTTYPE, 0x403, 24, 0
+0x6e55, 0x6e6b, 0x776f, 0x206e, 0x7270, 0x746f, 0x6365, 0x6974, 0x6e6f, 
+0x7420, 0x7079, 0x0065, 
+    0
+END
+
+IDD_PAGE_MINIMAP DLGINIT
+BEGIN
+    IDC_CMB_MINIMAP_ICONS, 0x403, 10, 0
+0x6f47, 0x646c, 0x4d20, 0x6e69, 0x0065, 
+    IDC_CMB_MINIMAP_ICONS, 0x403, 6, 0
+0x6f48, 0x7375, 0x0065, 
+    IDC_CMB_MINIMAP_ICONS, 0x403, 6, 0
+0x7243, 0x736f, 0x0073, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TILEPOINTS          CURSOR                  "res\\tilepoints.cur"
+IDC_DOODADS             CURSOR                  "res\\doodads.cur"
+IDC_SHADOWS             CURSOR                  "res\\shadows.cur"
+IDC_PATH                CURSOR                  "res\\path.cur"
+IDC_UNITS               CURSOR                  "res\\units.cur"
+IDC_PEN                 CURSOR                  "res\\pen.cur"
+IDC_TILEPOINTS_SEL      CURSOR                  "res\\cur00001.cur"
+IDC_TILEPOINTS_REPLACE  CURSOR                  "res\\cur00002.cur"
+IDC_TILEPOINTS_FILL     CURSOR                  "res\\tilepoin.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "W3ZMapEdit"
+    IDR_W3ZMAPTYPE          "\nW3ZMap\nWarcraft III Scenario File\n\n\nW3ZMapEdit.Document\nW3ZMap Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "W3ZMapEdit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Hide/Show main toolbar\nToggle main toolbar"
+    ID_VIEW_STATUS_BAR      "Hide/show status bar\nToggle status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BTN_PATH_NOB_WOK_FOK "Build forbiden, walk allowed, fly allowed\nWalk+Fly"
+    ID_BTN_PATH_BOK_WOK_NOF "Build allowed, walk allowed, fly forbiden\nBuild+Walk"
+    ID_BTN_PATH_NOB_WOK_NOF "Walk only\nWalk"
+    ID_BTN_PATH_BOK_NOW_NOF "Build only\nBuild"
+    ID_VIEW_EDITMODEBAR     "Show or hide the edit mode bar\nToggle EditModeBar"
+    ID_EDIT_MAP_PROPERTIES  "Displays map properties dialog box\nMap Properties"
+    ID_VIEW_EDITTOOLBARSBAR "Show or hide the edit toolbars bar\nToggle EditToolbarsBar"
+    ID_VIEW_REFRESH         "Refresh view screen\nRefresh View"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_IMPORT          "Imports a non-war3 file that could be used as ground map.\nImport"
+    ID_VIEW_STATISTICS      "Display map statistics\nMap statistics"
+    ID_VIEW_VIEWMODEBAR     "Show or hide the view mode bar\nToggle View Mode Bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BTN_TILE_BENDDOWN    "Make a bent slope from the selected area.\nBent slope"
+    ID_BTN_TILE_FLAT        "Flaten the ground of the selected area.\nFlaten"
+    ID_BTN_DOOD_RECT        "Draw a rectangle of doodads.\nDoodad rectangle"
+    ID_BTN_DOOD_ELLIPSE     "Draw an ellipse of doodads.\nDoodad ellipse"
+    ID_BTN_ZOOM_IN          "Zoom in\nZoom in"
+    ID_BTN_ZOOM_OUT         "Zoom out\nZoom out"
+    ID_BTN_ZOOM_NO          "Zoom 100%\nZoom 100%"
+    ID_BTN_TILE_RAND_WATER  "Randomize water height in the selected area.\nRandomize water height"
+    ID_BTN_TILE_SLOPE_WATER "Make a water slope from the selected area.\nWater slope"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BTN_TILE_BENDUP_WATER 
+                            "Make a water bent slope from the selected area.\nWater bent slope"
+    ID_BTN_TILE_BENDDOWN_WATER 
+                            "Make a water bent slope from the selected area.\nWater bent slope"
+    ID_BTN_TILE_FLAT_WATER  "Flaten the water level of the selected area.\nFlaten water level"
+    ID_VIEW_ZOOMBAR         "Show or hide the zoom bar\nToggle Zoom Bar"
+    ID_BTN_PATH_BOK_NOW_FOK "Build allowed, walk forbiden, fly allowed.\nBuild+Fly"
+    ID_BTN_PATH_NOB_NOW_NOF "Nothing allowed\nNothing allowed"
+    ID_BTN_PATH_BOK_WOK_FOK "Build allowed, walk allowed, fly allowed\nBuild+Walk+Fly"
+    ID_BTN_TILE_ROTATE      "Rotate selected tilepoints on the right.\nRotate right"
+    ID_BTN_TILE_H_MIRROR    "Horizontal mirror.\nHorizontal mirror"
+    ID_BTN_TILE_V_MIRROR    "Vertical mirror.\nVertical mirror"
+    ID_POPTPB_PROPERTIES    "Open TilePoint Bar properties box\nEdit properties"
+    ID_POPTPB_HELP          "Help about the TilePoint Bar\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEW_POSITION       "Coordinates (-99999.99, -99999.99, -99999.99) "
+    IDS_TESTSTRING          "Test String"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BTN_DOOD_ADD         "Add a doodad using the parameters from the ""Doodad Bar"".\nAdd doodads"
+    ID_BTN_DOOD_DELETE      "Remove a doodad.\nRemove doodad"
+    ID_BTN_DOOD_REPLACE     "Replace the selected doodad type by the type specified in the ""Doodad Bar"".\nReplace doodad type"
+    ID_BTN_DOOD_SELECT      "Select doodads.\nSelect doodads"
+    ID_BTN_DOOD_RECT_FILL   "Draw a filled rectangle of doodads.\nDoodad filled rectangle"
+    ID_BTN_DOOD_ELLIPSE_FILL 
+                            "Draw a filled ellipse of doodads.\nDoodad filled ellipse"
+    ID_BTN_DOOD_UPDT        "Update properties of a doodad using the Doodad Bar data.\nUpdate doodad properties"
+    ID_BTN_TILE_SELECT      "Select tilepoints.\nSelect tilepoints"
+    ID_BTN_TILE_PEN         "Set tilepoints using parameters from the ""TilePoints Bar"".\nTilePoint pen"
+    ID_BTN_TILE_RECT        "Set tilepoints on a rectangle.\nRectangle"
+    ID_BTN_TILE_ELLIPSE     "Set tilepoints on an ellipse.\nEllipse"
+    ID_BTN_TILE_FILL        "Fill a tilepoint area.\nFill tilepoints"
+    ID_BTN_TILE_REPLACE     "Replace selected tilepoint ground type with the one set in the ""TilePoint Bar"".\nReplace ground type"
+    ID_BTN_TILE_RAND        "Randomize ground height in the selected area.\nRandomize height"
+    ID_BTN_TILE_SLOPE       "Make a slope from the selected area.\nSlope"
+    ID_BTN_TILE_BENDUP      "Make a bent slope from the selected area.\nBent slope"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TILESEDIT            "Hide/show tilepoints edit bars\nTilepoints edit bars"
+    ID_DOODADSEDIT          "Hide/show doodads edit bars\nDoodads edit bars"
+    ID_PATHEDIT             "Hide/show path edit bar\nPath edit bar"
+    ID_SHADOWSEDIT          "Hide/show shadows edit bar\nShadows edit bar"
+    ID_UNITSEDIT            "Hide/show units edit bar\nUnits edit bar"
+    ID_BTN_PATH_NOB_NOW_FOK "Fly only\nFly"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POPDB_PROPERTIES     "Open Doodad Bar properties box\nEdit properties"
+    ID_POPDB_HELP           "Help about the Doodad Bar\nHelp"
+    ID_POPPB_PROPERTIES     "Open path tool properties box\nTool properties"
+    ID_POPPB_HELP           "Help about the path tool\nHelp"
+    ID_BTN_PATH_RESET       "Reset path status using the ground data\nReset path"
+    ID_BTN_DOOD_SPACING     "Delete trees too close from other trees\nTrees spacing"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP_HOWTO           "Displays examples of how to do various things\nHow to..."
+    ID_BTN_DOOD_MOVE        "Move selected doodads\nMove"
+    ID_FILE_EXPORT          "Export \nExport"
+END
+
+#endif    // Anglais (États-Unis) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\W3ZMapEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
